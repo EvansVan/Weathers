@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weathers you</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#00ffff">
+
+  <link href="assets/css/toolkit-minimal.css" rel="stylesheet" />
+  <link href="assets/css/application-minimal.css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.10.1/bootstrap-social.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
+    crossorigin="anonymous"/>
+
+  <script language="JavaScript" type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="assets/js/application.js"></script>
+  <script language="JavaScript" type="text/javascript" src="assets/js/tether.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="assets/js/toolkit.js"></script>
+  <script language="JavaScript" type="text/javascript" src="app.js"></script>
+  <script language="JavaScript" type="text/javascript" src="sw.js"></script>
+  <style>
+    #main{
+      padding-top:10%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="main">
+    <div class="app-title pb-3">
+      <h1>Weather updates for your location </h1>
+    </div>
+    <div class="form-group col-md-4">
+      <input id="city" type="text" class="form-control form-control-lg" placeholder="Enter where you wanna weather...">
+      <button id="submit" type="submit" class="btn btn-primary btn-lg mt-2">weather me</button>
+    </div>
+
+    <div class="row mt-3" id="weather"> 
+      <!--
+      <div class="col-10 col-md-6 m-auto col-lg-4 py-2">
+        <div class="card px-2"> 
+            <div class="card-body">
+              <img src="" alt="icon" id="icon">
+              <p class="card-title mb-3" id="location"><p/>
+              <h5 class="card-subtitle mb-3" id="description">Some description text<h5/>
+              <p class="card-text">Temp: <span id="temp" class="badge badge-info"></span></p>
+            </div>
+          </div>
+      </div>-->
+
+    </div>
+  </div>
+</body>
+
+</html>
